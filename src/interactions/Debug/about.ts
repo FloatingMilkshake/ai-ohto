@@ -24,7 +24,7 @@ export default async function (
             },
             {
                 name: 'Guild Count',
-                value: `${(await interaction.client.guilds.fetch()).size}`,
+                value: `${interaction.client.guilds.cache.size}`,
                 inline: true,
             },
             {
